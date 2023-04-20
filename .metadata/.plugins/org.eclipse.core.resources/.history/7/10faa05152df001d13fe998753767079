@@ -1,0 +1,82 @@
+import java.util.*;
+//it is not best practice to import all the classes of util package
+//because it creates performance issue.import only the required classes.
+public class LaunchLinkedList1 {
+
+	public static void main(String[] args) {
+	
+		//these classes are present in util package so we have to import that package 
+		//7 classes in collection framework and 3 interfaces(List,Queue,Set)
+		//7 classes are :
+		//ArrayList
+		//LinkedList
+		//ArrayDeque
+		//PriorityQueue
+		//TreeSet
+		//HashSet
+		//Linked HashSet
+		
+		
+		
+//Note:In collection framework ,whatever data you add gets stored as object
+		//ArrayList internally uses Dynamic Array Data Structure
+		
+	LinkedList  ll1=new LinkedList();
+ll1.add(10);
+ll1.add(20);
+ll1.add(30);
+ll1.add(40);
+ll1.add(50);
+ll1.addFirst("Gaurav Sharma");
+ll1.add("bengaluru");
+System.out.println(ll1);
+
+System.out.println("**********************************************************");
+
+
+//ArrayList can store heterogeneos data and homogeneous data also .
+ArrayList al2=new ArrayList();
+al2.add("Ineuron");
+al2.add(34);
+al2.add('c');
+al2.add(5755.65);
+al2.add(false);
+System.out.println(al2);
+
+
+System.out.println("**********************************************************");
+
+//we can add entire ArrayList collection  to another new or existing colllection 
+//(will return boolean)
+
+ArrayList al3=new ArrayList();
+boolean f=al3.addAll(al2);
+System.out.println(al3);
+System.out.println(f);
+
+
+
+System.out.println("**********************************************************");
+
+
+
+ArrayList al4=new ArrayList();
+al4.add(10);
+al4.add(20);
+al4.add(30);
+al4.add(40);
+al4.add(50);
+System.out.println("before adding 55 to 2nd index ::"+al4);
+al4.add(2, 55);
+System.out.println("after adding 55 to 2nd index ::"+al4);
+al4.add(0, 15);
+System.out.println("after adding 15 to 0th index ::"+al4);
+al4.add(95);
+System.out.println("after adding 95 to rear index ::"+al4);
+	}
+	
+	
+	
+	
+
+}

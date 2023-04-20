@@ -1,0 +1,47 @@
+import java.util.*;
+//it is not best practice to import all the classes of util package
+//because it creates performance issue.import only the required classes.
+public class LaunchArrayList1 {
+
+	public static void main(String[] args) {
+	
+		//these classes are present in util package so we have to import that package 
+		//7 classes in collection framework and 3 interfaces(List,Queue,Set)
+		//7 classes are :
+		//ArrayList
+		//LinkedList
+		//ArrayDeque
+		//PriorityQueue
+		//TreeSet
+		//HashSet
+		//Linked HashSet
+		
+		
+		
+//Note:In collection framework ,whatever data you add gets stored as object
+		//ArrayList internally uses Dynamic Array Data Structure
+		
+		ArrayList  al1=new ArrayList();
+al1.add(10);
+al1.add(20);
+al1.add(30);
+al1.add(40);
+al1.add(50);
+System.out.println(al1);
+
+
+//ArrayList can store heterogeneos data
+ArrayList al2=new ArrayList();
+al2.add("Ineuron");
+al2.add(34);
+al2.add('c');
+al2.add(5755.65);
+al2.add(false);
+System.out.println(al2);
+	}
+	
+	
+	
+	
+
+}
