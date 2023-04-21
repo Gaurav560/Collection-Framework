@@ -1,0 +1,26 @@
+
+import java.util.PriorityQueue;
+
+public class LaunchPriorityQueue1 {
+
+	public static void main(String[] args) {
+
+		PriorityQueue pq1 = new PriorityQueue();
+		pq1.add(10);
+		pq1.add(20);
+		pq1.add(30);
+		pq1.add(40);
+		pq1.add(40);
+		pq1.add(50);
+		pq1.add("bengaluru");
+	
+		
+		System.out.println(pq1);
+		System.out.println("**********************************************************");
+
+	
+
+
+	}
+
+}

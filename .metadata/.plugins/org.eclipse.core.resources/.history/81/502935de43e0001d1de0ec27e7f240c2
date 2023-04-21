@@ -1,0 +1,28 @@
+import java.util.*;
+
+public class LaunchArrayListmpl {
+
+	public static void main(String[] args) {
+
+		ArrayList al1 = new ArrayList();
+		al1.add(10);// Auto boxing:: al1.add(new Integer(10));
+		al1.add(20.5);// Auto boxing:: al1.add(new Double(20.5));
+		al1.add(30);
+		al1.add(40);
+		al1.add(50);
+		for (int i = 0; i < al1.size(); i++)
+		{
+			System.out.println(al1.get(i));
+		}
+		
+		
+		for(Object i:al1) {
+			
+			System.out.println(i);
+		}
+
+		System.out.println("**********************************************************");
+
+	}
+
+}

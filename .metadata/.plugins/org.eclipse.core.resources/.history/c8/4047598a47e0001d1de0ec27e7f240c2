@@ -1,0 +1,47 @@
+import java.util.*;
+
+public class LaunchArrayListmpl {
+
+	public static void main(String[] args) {
+
+		ArrayList al1 = new ArrayList();
+		al1.add(10);// Auto boxing:: al1.add(new Integer(10));
+		al1.add(20.5);// Auto boxing:: al1.add(new Double(20.5));
+		al1.add(30);
+		al1.add(40);
+		al1.add(50);
+
+		// using simple for loop
+		for (int i = 0; i < al1.size(); i++) {
+			System.out.println(al1.get(i));
+		}
+
+		// using for each loop
+		for (Object i : al1) {
+
+			System.out.println(i);
+		}
+
+		// iterators for accessing the objects in list(by nature it will fetch the value
+		// present in the objects)
+		//iterator method is present in all the 7 classes in collection framework 
+		
+		Iterator itr=al1.iterator();
+		if (itr.hasNext()) {
+		Object obj=itr.next();
+			System.out.println(obj);
+		}
+		
+		
+		//using iterator with while loop
+		while (itr.hasNext()) {
+			System.out.println(itr.next());
+			
+		}
+		
+
+		System.out.println("**********************************************************");
+
+	}
+
+}
